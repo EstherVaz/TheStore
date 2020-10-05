@@ -17,10 +17,6 @@ namespace TheStore.BL.Repository
             new List<OrdenDetail>();
 
 
-
-
-        
-
         //Metodos...
         public bool Save(Orden newOrden)                //pasa nueva instancia de una orden 
         {
@@ -71,13 +67,13 @@ namespace TheStore.BL.Repository
             OrdenDetailList.Add(OrderDetail2);
             return OrdenDetailList;
         }
-        public Orden GetById(int id)
-        {
-            var Orden= Orders.FirstOrDefault(x => x.Id == id);           //Expresion Lamnda
-            Orden.OrderItems =
-                GetOrderItemsById(Orden.Id);
-            return Orden;
-        }
+        //public Orden GetById(int id)
+        //{
+        //    var Orden= Orders.FirstOrDefault(x => x.Id == id);           //Expresion Lamnda
+        //    Orden.OrderItems =
+        //        GetOrderItemsById(Orden.Id);
+        //    return Orden;
+        //}
         //public bool Delete(int id)
         //{
         //    var Order = Orders.FirstOrDefault(x => x.Id == id);
