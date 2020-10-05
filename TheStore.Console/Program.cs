@@ -9,10 +9,10 @@ namespace TheStore.Console
     {
         static void Main(string[] args)
         {
-            var listRepository =
-                new CustomerRepositoryList();
-            var newCustomer = new SilverCustomer();
-            var adressRepository = new AdressRepository();
+            //var listRepository =
+            //    new CustomerRepositoryList();
+            //var newCustomer = new SilverCustomer();
+            //var adressRepository = new AdressRepository();
 
 
             newCustomer.Id = 5;
